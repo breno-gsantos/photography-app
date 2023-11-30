@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Socials from "./Socials";
 import MobileNavbar from "./MobileNavbar";
+import { ModeToggle } from "../DarkMode/ModeToggle";
 
 export const links = [
     {
@@ -32,8 +33,11 @@ export default function Header(){
                         <Link key={href} href={href} className="text-muted-foreground hover:text-primary transition">{label}</Link>
                     ))}
                 </nav>
-                <div className="hidden lg:flex">
-                  <Socials />  
+                <div className="flex items-center gap-x-4">
+                    <ModeToggle />
+                    <div className="hidden lg:flex">
+                       <Socials /> 
+                    </div>
                 </div>
                 <MobileNavbar />
             </div>

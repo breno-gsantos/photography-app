@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Playfair_Display, Mulish } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header/Header'
+import { ThemeProvider } from '@/provider/ThemeProvider'
 
 const playfairDisplay = Playfair_Display ({ 
   subsets: ['latin'],
@@ -26,8 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${mulish.variable} ${playfairDisplay.variable}`}>
-        <Header />
-        {children}
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
+          <Header />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

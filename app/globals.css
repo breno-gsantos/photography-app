@@ -71,7 +71,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground overflow-hidden font-secondary bg-white;
+    @apply bg-background text-foreground overflow-hidden font-secondary;
   }
   .section{
     @apply h-screen w-screen;
