@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Playfair_Display, Mulish } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/Header'
+import Header from '@/components/header/Header'
 
 const playfairDisplay = Playfair_Display ({ 
   subsets: ['latin'],

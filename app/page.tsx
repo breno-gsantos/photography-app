@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className=''>
-      Oi
-    </main>
+    <section className='section'>
+      Home
+    </section>
   )
 }
