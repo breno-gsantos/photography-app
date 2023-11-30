@@ -35,7 +35,7 @@ export default function Header(){
                 </nav>
                 <div className="flex items-center gap-x-4">
                     <ModeToggle />
-                    <div className="hidden lg:flex">
+                    <div className="hidden lg:flex text-muted-foreground">
                        <Socials /> 
                     </div>
                 </div>
